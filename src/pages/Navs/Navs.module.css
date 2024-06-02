@@ -1,0 +1,33 @@
+.navs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-sec);
+  color: var(--color-prim);
+  font-family: var(--typo-prim);
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 5rem;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 3rem;
+    }
+
+    .content__left {
+      flex: 1;
+      width: 100%;
+    }
+
+    .content__right {
+      flex: 1;
+      width: 100%;
+    }
+  }
+}
