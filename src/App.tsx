@@ -1,9 +1,11 @@
-import Navs from './pages/Navs/Navs';
+import { Link } from 'react-router-dom';
+
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div>
-      <Navs />
+    <div className={styles.app}>
+      <Link to="/navs">Navs</Link>
     </div>
   );
 }
