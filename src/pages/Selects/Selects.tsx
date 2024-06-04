@@ -18,18 +18,23 @@ function Selects() {
 
   return (
     <div className={styles.selects}>
-      <Select
-        multiple
-        options={options}
-        value={value1}
-        onChange={option => setValue1(option)}
-      />
-      <br />
-      <Select
-        options={options}
-        value={value2}
-        onChange={option => setValue2(option)}
-      />
+      <div className={styles.single}>
+        <h1>Single Select</h1>
+        <Select
+          options={options}
+          value={value2}
+          onChange={option => setValue2(option)}
+        />
+      </div>
+      <div className={styles.multiple}>
+        <h1>Multiple Select</h1>
+        <Select
+          multiple
+          options={options}
+          value={value1}
+          onChange={option => setValue1(option)}
+        />
+      </div>
     </div>
   );
 }

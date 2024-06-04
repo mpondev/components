@@ -30,11 +30,13 @@
       cursor: pointer;
       background-color: none;
       outline: none;
+      background-color: #444;
 
       &:hover,
       &:focus {
         background-color: hsl(0, 100%, 90%);
         border-color: hsl(0, 100%, 50%);
+        color: #777;
       }
 
       .remove-btn {
@@ -89,7 +91,7 @@
     border: 0.05em solid #777;
     border-radius: 0.25em;
     top: calc(100% + 0.25em);
-    background-color: white;
+    background-color: #777;
     z-index: 100;
 
     &.show {
