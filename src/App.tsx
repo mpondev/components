@@ -6,6 +6,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Link to="/navs">Navs</Link>
+      <Link to="/selects">Selects</Link>
     </div>
   );
 }
